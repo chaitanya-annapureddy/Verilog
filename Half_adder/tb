@@ -6,12 +6,12 @@ integer i;
 // order based mapping
 half_adder dut (a,b,sum,carry);
 
-// initializing 
-initial 
-  begin 
-    a = 0 ;
-     b = 0;
-      end
+//initalizing values 
+initial
+ begin
+{a,b} = 0;
+ end
+
 
 //assigning values to a and b
 for (i =0 ; i < 4; i = i + 1)
