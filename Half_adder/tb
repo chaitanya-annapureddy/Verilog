@@ -4,7 +4,7 @@ wire sum,carry;
 integer i;
 
 // order based mapping
-half_adder dut (a,b,sum,carry)
+half_adder dut (a,b,sum,carry);
 
 // initializing 
 initial 
@@ -16,13 +16,13 @@ initial
 //assigning values to a and b
 for (i =0 ; i < 4; i = i + 1)
   begin
-   {a,b} = i
+   {a,b} = i;
   end
 
 // displaying the output
-inital begin
-$display("a = % b , b = % b ,a,b")
-end
+inital
+$display("a = % b , b = % b ,a,b");
+
 #100
 #$finish
 endmodule
