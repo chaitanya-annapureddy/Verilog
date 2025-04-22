@@ -1,6 +1,7 @@
 module half_adder;
 reg a,b;
 wire sum,carry;
+integer i;
 
 // order based mapping
 half_adder dut (a,b,sum,carry)
@@ -13,7 +14,7 @@ initial
       end
 
 //assigning values to a and b
-for (i =0 ; i < 5; i = i + 1)
+for (i =0 ; i < 4; i = i + 1)
   begin
    {a,b} = i
   end
