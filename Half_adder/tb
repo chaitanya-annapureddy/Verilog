@@ -17,13 +17,14 @@ initial
 for (i =0 ; i < 4; i = i + 1)
   begin
    {a,b} = i;
+   #10;
   end
 
 // displaying the output
 inital
 $display("a = % b , b = % b ,a,b");
 
-#100
+#100;
 #$finish
 endmodule
 
