@@ -1,7 +1,6 @@
 module half_adder;
 reg a,b;
 wire sum,carry;
-integer i;
 
 // order based mapping
 half_adder dut (a,b,sum,carry);
@@ -9,22 +8,17 @@ half_adder dut (a,b,sum,carry);
 //initalizing values 
 initial
  begin
-{a,b} = 0;
+a = 0 ;b =0 ;#2;
+a = 0 ;b = 1; #2;
+a = 1 ;b = 0 ;#2;
+a = 1 ; b = 1 ;#2;
  end
-
-
-//assigning values to a and b
-for (i =0 ; i < 4; i = i + 1)
-  begin
-   {a,b} = i;
-   #10;
-  end
-
 // displaying the output
-inital
+inital 
+ begin
 $display("a = % b , b = % b ,a,b");
 
-#100;
-#$finish
+#100 $finish;
+ end
 endmodule
 
