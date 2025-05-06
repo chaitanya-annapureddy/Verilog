@@ -22,7 +22,7 @@ module full_adder_tb ;
 
   initial 
     begin 
-      $monitor ("$time ,a = %b ,b = %b,c = %b,sum = %b ,carry = %b,a,b,c");
+     $monitor ("time=%0t ,a = %b ,b = %b,c = %b,sum = %b ,carry = %b,$time,a,b,c");
       #100 $finish;
     end
 endmodule
