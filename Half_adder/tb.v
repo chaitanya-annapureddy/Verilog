@@ -17,6 +17,7 @@ a = 1 ; b = 1 ;#2;
 inital 
  begin
 $display("a = % b , b = % b ,a,b");
+$monitor ("time=%0t ,a = %b ,b = %b,,sum = %b ,carry = %b,$time,a,b");
 
 #100 $finish;
  end
