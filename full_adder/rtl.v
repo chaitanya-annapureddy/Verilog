@@ -1,4 +1,4 @@
-
+//full_adder using two half_adder
 module full_adder ( input a,b,c,
                    output sum,carry);
 
@@ -10,7 +10,16 @@ module full_adder ( input a,b,c,
   //or gate
   assign carry = (w2 | w3 );
 
-endmodule
+endmodule 
+
+//fulladder
+module full_adder ( input a,b,c,
+                   output sum ,carry);
+
+  assign sum = (a^b^c);
+  assign carry = (a & b ) | ( b & c ) | ( c & a ) ;
+
+endmodule 
 
 
                   
