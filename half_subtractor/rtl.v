@@ -5,6 +5,7 @@ module half_subtractor ( input a,b,
   assign borrow  = (~a & b);
 
   /* gate level modeling 
+  wire not_a
    xor g1 (diff ,a ,b);
    not g2 (not_a , a);
    and g3 (borrow , not_a , b);
