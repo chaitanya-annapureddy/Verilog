@@ -20,7 +20,7 @@
         always @(posedge w_clk or negedge w_rstn)
                 begin
                       if(!w_rstn)
-                             {b_wptr,g_wptr } <= 5'd4;
+                      {b_wptr,g_wptr } <= 5'd0;
                            else
                              begin
                                               b_wptr     <= b_wptr_in;
