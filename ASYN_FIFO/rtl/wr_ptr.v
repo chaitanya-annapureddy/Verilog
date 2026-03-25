@@ -25,9 +25,9 @@
                              begin
                                               b_wptr     <= b_wptr_in;
                                               g_wptr     <= g_wptr_in;
-                                                                  full       <= (g_wptr == {g_rptr_sync + 5'd24});
+                                                          //        full       <= (g_wptr == {g_rptr_sync + 5'd24});
 
-                                                     // full       <= (g_wptr == {~g_rptr_sync[ptr:ptr-1],g_rptr_sync[ptr-2:0]});
+                                                      full       <= (g_wptr == {~g_rptr_sync[ptr:ptr-1],g_rptr_sync[ptr-2:0]});
 
 
                                                    // full      <= (g_wptr == {g_rptr_sync[ptr],~g_rptr_sync[ptr-1],g_rptr_sync[ptr-2], ~g_rptr_sync[ptr-ptr]});
